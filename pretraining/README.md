@@ -22,14 +22,14 @@ export PYTHONPATH="/path/to/how-to-probe/pretraining/mmpretrain/:$PYTHONPATH"
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/mocov2/mocov2_bcosresnet50_4xb64-coslr-200e_in1k.py 4 --resume 'auto'
 ```
 
-**Conventional ResNet50 Training on 4GPUs, 1 Node**
+**Conventional ResNet50 Training on 4 GPUs, 1 Node**
 
 ```
 cd /path/to/how-to-probe/pretraining/mmpretrain                                                 
                                                                                               
 # run your script here                                                                        
 export PYTHONPATH="/path/to/how-to-probe/pretraining/mmpretrain/:$PYTHONPATH"                   
- CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/mocov2/mocov2_resnet50_4xb64-coslr-200e_in1k.py 4 --resume 'auto'
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/mocov2/mocov2_resnet50_4xb64-coslr-200e_in1k.py 4 --resume 'auto'
 ```
 
 #### Training BYOL
@@ -44,7 +44,7 @@ export PYTHONPATH="/path/to/how-to-probe/pretraining/mmpretrain/:$PYTHONPATH"
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/byol/byol_bcosresnet50_4xb64-coslr-200e_in1k.py 4 --resume 'auto'
 ```
 
-**Conventional ResNet50 Training on 4GPUs, 1 Node**
+**Conventional ResNet50 Training on 4 GPUs, 1 Node**
 
 ```
 cd /path/to/how-to-probe/pretraining/mmpretrain                                                 
