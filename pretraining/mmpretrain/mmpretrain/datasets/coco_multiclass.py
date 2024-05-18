@@ -1,4 +1,3 @@
-# author: Siddhartha Gairola, email: sgairola@mpi-inf.mpg.de
 # adapted from https://github.com/open-mmlab/mmpretrain/blob/main/mmpretrain/datasets/voc.py
 # and, https://raw.githubusercontent.com/open-mmlab/mmdetection/main/mmdet/datasets/coco.py
 import copy

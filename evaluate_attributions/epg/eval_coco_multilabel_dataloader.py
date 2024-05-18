@@ -1,5 +1,3 @@
-# Author: Siddhartha Gairola (sgairola at mpi-inf dot mpg dot de)                             
-                                                                                              
 import os                                                                                     
 import random                                                                                 
 import numpy as np                                                                            
