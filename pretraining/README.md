@@ -97,4 +97,27 @@ python run_with_submitit_new.py --nodes 2 --ngpus 4 --arch bcosresnet50 --data_p
 
 `**Note**: For B-cos DINO we found the **adamw** optimizer along with **weight_decay=0** to work better rather than the default setting for conventional models.`
 
-`Additionally feel free to modify based on your needs, and hyper-parameters.
+`Additionally feel free to modify based on your needs, and hyper-parameters.`
+
+### Training Supervised Models
+
+We again use the `mmpretrain` setup for supervised pre-trainings on ImageNet1K.
+
+**B-cos Model with BCE Loss**
+```
+cd /path/to/how-to-probe/pretraining/mmpretrain                                                 
+                                                                                              
+# run your script here                                                                        
+export PYTHONPATH="/path/to/how-to-probe/pretraining/mmpretrain/:$PYTHONPATH"                   
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/supervised_trainings/sup_bcosresnet50-bcoshead_bce_adamnowd_coslr_4xb64_100e_in1k.py 4 --resume 'auto'
+```
+
+```
+cd /path/to/how-to-probe/pretraining/mmpretrain                                                 
+                                                                                              
+# run your script here                                                                        
+export PYTHONPATH="/path/to/how-to-probe/pretraining/mmpretrain/:$PYTHONPATH"                   
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 bash ./tools/dist_train.sh configs/supervised_trainings/sup_resnet50-stdhead_bce_adamnowd_coslr_4xb64_100e_in1k.py 4 --resume 'auto'
+```
+
+`For additional configs see respective configs/[mocov2/byol/supervised_trainings] or dino/ folders.`
