@@ -72,6 +72,8 @@ python eval_gridpg_lime.py
 
 Similar to GridPG, EPG is also a localisation metric to evaluate the class-specificity and quality of heatmap-based explanation methods. We support `LRP, GradCAM, IntergratedGradients, InputXGradient, GuidedBackpropagation, and B-cos`.
 
+For below `cd /how-to-probe/evaluate_attributions/epg`
+
 ### For VOC
 
 Similar to step 3. above:
