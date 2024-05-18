@@ -1,5 +1,5 @@
 _base_ = [
-    '../../../pretraining/mmpretrain/configs/_base_/default_runtime.py',
+    '../../pretraining/mmpretrain/configs/_base_/default_runtime.py',
 ]
 
 # dataset settings

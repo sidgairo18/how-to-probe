@@ -1,6 +1,6 @@
 _base_ = [
-    '../../../pretraining/mmpretrain/configs/_base_/schedules/imagenet_sgd_steplr_100e.py',
-    '../../../pretraining/mmpretrain/configs/_base_/default_runtime.py',
+    '../../pretraining/mmpretrain/configs/_base_/schedules/imagenet_sgd_steplr_100e.py',
+    '../../pretraining/mmpretrain/configs/_base_/default_runtime.py',
 ]
 
 # dataset settings
