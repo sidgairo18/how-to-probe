@@ -1,5 +1,5 @@
 # How to Probe
-The official implementation of our work How to Probe: Simple Yet Effective Techniques for Improved Post-hoc Explanations
+The official implementation of our work How to Probe: Simple Yet Effective Techniques for Improved Post-hoc Explanations @ ICLR 2025 ([OpenReview Link](https://openreview.net/pdf?id=57NfyYxh5f)).
 
 The code is divided into 3 steps: 
 * Pre-training SSL and supervised model backbones.
